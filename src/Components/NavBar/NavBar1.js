@@ -1,0 +1,59 @@
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import logo from '../../Images/logo2.png';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+        dispaly: 'block'
+    },
+    title: {
+        flexGrow: 1,
+        fontFamily: 'Staatliches, cursive',
+        textAlign: 'center',
+        fontSize: '32pt'
+    },
+    logo: {
+        flexGrow: 1,
+        float: 'left'
+    },
+    logo1: {
+        flexGrow: 1,
+        float: 'right'
+    }
+}));
+
+export default function NavBar1() {
+    const classes = useStyles();
+
+    return (
+        <div className={classes.root}>
+            <Navbar sticky="top" bg="dark" variant="dark">
+                <Navbar.Brand href="#home" className={classes.title}>
+                    <img alt="logo" src={logo} width="60" height="60" className={classes.logo} />{' '}
+                    Cypress Centurion Football
+                    <img alt="logo" src={logo} width="60" height="60" className={classes.logo1} />{' '}
+                </Navbar.Brand>
+            </Navbar>
+            <Nav fill variant="tabs">
+                <Nav.Item>
+                    <Nav.Link href="/home">Home</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="/roster">Roster</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="/coaches">Coaches</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link eventKey="link-3">Forms/Links</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link eventKey="link-3">Boosters/Sponsors</Nav.Link>
+                </Nav.Item>
+            </Nav>
+        </div>
+    );
+}
