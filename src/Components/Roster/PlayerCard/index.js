@@ -21,6 +21,9 @@ function FriendCard(props) {
           <li>
             <strong>Ht/Wt: </strong> {props.measurables}
           </li>
+          <li>
+            <strong><a href="https://www.hudl.com/profile/9668819/Isaac-Hurtado">HUDL</a> </strong> {props.hudl}
+          </li>
         </ul>
       </div>
     </div>
