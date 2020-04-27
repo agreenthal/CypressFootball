@@ -5,7 +5,7 @@ function FriendCard(props) {
   return (
     <div className="card">
       <div className="img-container">
-        <img alt={props.name} src={props.image} />
+        <img href={props.hudl} alt={props.name} src={props.image} />
       </div>
       <div className="content">
         <ul>
@@ -13,10 +13,13 @@ function FriendCard(props) {
             <strong>Name:</strong> {props.name}
           </li>
           <li>
-            <strong>Occupation:</strong> {props.occupation}
+            <strong>Position:</strong> {props.position}
           </li>
           <li>
-            <strong>Location:</strong> {props.location}
+            <strong>Year: </strong> {props.class}
+          </li>
+          <li>
+            <strong>Ht/Wt: </strong> {props.measurables}
           </li>
         </ul>
       </div>

@@ -65,7 +65,7 @@ export default function Schedule() {
                                 </ListItemAvatar>
                                 <ListItemText
                                     primary="Week 0: @ Peninsula HS"
-                                    secondary={secondary ? 'Secondary text' : 'Location: Peninsula High School'}
+                                    secondary={secondary ? 'Secondary text' : 'Location: Peninsula HS'}
                                 />
                             </ListItem>
                             <ListItem>
@@ -76,7 +76,7 @@ export default function Schedule() {
                                 </ListItemAvatar>
                                 <ListItemText
                                     primary="Week 1: @ San Juan Hills HS"
-                                    secondary={secondary ? 'Secondary text' : "Location: San Juan Hills High School"}
+                                    secondary={secondary ? 'Secondary text' : "Location: San Juan Hills HS"}
                                 />
                             </ListItem>
                             <ListItem>
@@ -87,7 +87,7 @@ export default function Schedule() {
                                 </ListItemAvatar>
                                 <ListItemText
                                     primary="Week 2: vs. Western HS"
-                                    secondary={secondary ? 'Secondary text' : "Location: Western High School"}
+                                    secondary={secondary ? 'Secondary text' : "Location: Western HS"}
                                 />
                             </ListItem>
                             <ListItem>
@@ -118,8 +118,8 @@ export default function Schedule() {
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="Week 5: @ Capistrano Valley HS"
-                                    secondary={secondary ? 'Secondary text' : 'Location: Capistrano Valley High School'}
+                                    primary="Week 5: @ Capo Valley HS"
+                                    secondary={secondary ? 'Secondary text' : 'Location: Capistrano Valley HS'}
                                 />
                             </ListItem>
                             <ListItem>
@@ -130,7 +130,7 @@ export default function Schedule() {
                                 </ListItemAvatar>
                                 <ListItemText
                                     primary="Week 6: vs. Valencia HS"
-                                    secondary={secondary ? 'Secondary text' : 'Location: Western High School'}
+                                    secondary={secondary ? 'Secondary text' : 'Location: Western HS'}
                                 />
                             </ListItem>
                             <ListItem>
@@ -141,7 +141,7 @@ export default function Schedule() {
                                 </ListItemAvatar>
                                 <ListItemText
                                     primary="Week 7: @ Crean Lutheran HS"
-                                    secondary={secondary ? 'Secondary text' : 'Location: Portola High School'}
+                                    secondary={secondary ? 'Secondary text' : 'Location: Portola HS'}
                                 />
                             </ListItem>
                             <ListItem>
@@ -152,7 +152,7 @@ export default function Schedule() {
                                 </ListItemAvatar>
                                 <ListItemText
                                     primary="Week 8: vs. Tustin HS"
-                                    secondary={secondary ? 'Secondary text' : 'Location: Western High School'}
+                                    secondary={secondary ? 'Secondary text' : 'Location: Western HS'}
                                 />
                             </ListItem>
                             <ListItem>
@@ -163,7 +163,7 @@ export default function Schedule() {
                                 </ListItemAvatar>
                                 <ListItemText
                                     primary="Week 9: vs. Pacifica HS"
-                                    secondary={secondary ? 'Secondary text' : 'Location: Western High School'}
+                                    secondary={secondary ? 'Secondary text' : 'Location: Western HS'}
                                 />
                             </ListItem>
                             <ListItem>
@@ -174,7 +174,7 @@ export default function Schedule() {
                                 </ListItemAvatar>
                                 <ListItemText
                                     primary="Week 10: @ Kennedy HS"
-                                    secondary={secondary ? 'Secondary text' : 'Location: Western High School'}
+                                    secondary={secondary ? 'Secondary text' : 'Location: Western HS'}
                                 />
                             </ListItem>
                         </List>

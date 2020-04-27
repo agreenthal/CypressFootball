@@ -3,6 +3,7 @@ import Main from '../Main/Main';
 import Schedule from '../Main/Schedule';
 import Footer from '../Footer/Footer';
 import Twitter from '../Main/Twitter';
+import News from '../Main/News';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Row, Col } from 'react-bootstrap';
 import NavBar1 from '../NavBar/NavBar1';
@@ -31,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: theme.spacing(10),
         flexDirection: 'row',
         justifyContent: 'flex-end'
-    }
+    },
 }));
 
 function Home() {
@@ -46,13 +47,13 @@ function Home() {
                     <Schedule />
                 </Col>
                 <Col className={classes.main} xs={7}>
-                    <Row>
+                    <Row >
                         <Main />
                     </Row>
                 </Col>
-                <Col>
+                <Col className={classes.twitter} xs={2}>
                     <Row>
-                        <Twitter className={classes.twitter} xs={2} />
+                        <Twitter />
                     </Row>
                 </Col>
             </Row>

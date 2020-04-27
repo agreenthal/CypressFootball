@@ -9,7 +9,8 @@ const useStyles = makeStyles((theme) => ({
         border: '2px red solid',
         backgroundColor: '#ef6c00',
         color: '#fafafa',
-        top: theme.spacing(5)
+        top: theme.spacing(5),
+        paddingTop: theme.spacing(2)
     }
 }));
 
@@ -21,14 +22,11 @@ const FooterPage = () => {
             <MDBContainer fluid className="text-center text-md-left">
                 <MDBRow>
                     <MDBCol md="6">
-                        <h5 className="title">Footer Content</h5>
                         <p>
-                            Here you can use rows and columns here to organize your footer
-                            content.
-            </p>
+                            Welcome to the home of Cypress Centurion Football.
+                        </p>
                     </MDBCol>
                     <MDBCol md="6">
-                        <h5 className="title">Links</h5>
                         <ul>
                             <li className="list-#fafafa">
                                 <a href="#!">Cypress High School</a>
