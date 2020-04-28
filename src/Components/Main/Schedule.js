@@ -10,19 +10,20 @@ import Typography from '@material-ui/core/Typography';
 import { Paper } from '@material-ui/core';
 import { Container } from 'react-bootstrap';
 
-import Peninsula from '../../Images/peninsula.png';
-import SanJuanHills from '../../Images/sanjuanhills.png';
-import Western from '../../Images/western.png';
-import Katella from '../../Images/katella.png';
-import Capo from '../../Images/capo.png';
-import Valencia from '../../Images/valencia.png';
-import Crean from '../../Images/crean.png';
-import Tustin from '../../Images/tustin.png';
-import Pacifica from '../../Images/pacifica.png';
-import Kennedy from '../../Images/kennedy.png';
+import Peninsula from '../../Images/Logos/peninsula.png';
+import SanJuanHills from '../../Images/Logos/sanjuanhills.png';
+import Western from '../../Images/Logos/western.png';
+import Katella from '../../Images/Logos/katella.png';
+import Capo from '../../Images/Logos/capo.png';
+import Valencia from '../../Images/Logos/valencia.png';
+import Crean from '../../Images/Logos/crean.png';
+import Tustin from '../../Images/Logos/tustin.png';
+import Pacifica from '../../Images/Logos/pacifica.png';
+import Kennedy from '../../Images/Logos/kennedy.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        display: 'flex',
         width: '100%',
     },
     demo: {
@@ -32,10 +33,13 @@ const useStyles = makeStyles((theme) => ({
     title: {
         margin: theme.spacing(2, 0, 0),
         textAlign: 'center',
+        fontFamily: 'Staatliches, cursive',
+        fontSize: '18pt'
     },
     subtitle: {
         fontSize: '10pt',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontFamily: 'Staatliches, cursive'
     }
 }));
 
@@ -48,7 +52,7 @@ export default function Schedule() {
     return (
         <Paper elevation={6} className={classes.root}>
             <Grid container spacing={1}>
-                <Grid item xs>
+                <Grid item md>
                     <Container style={{ borderBottom: '3px solid navy', paddingBottom: '10px' }}>
                         <Typography variant="h6" className={classes.title}>
                             2020 Schedule
@@ -177,6 +181,8 @@ export default function Schedule() {
                                     secondary={secondary ? 'Secondary text' : 'Location: Western HS'}
                                 />
                             </ListItem>
+                            <br />
+                            <h1 style={{ textAlign: 'center', fontWeight: 'bold' }}>Record: 0-0</h1>
                         </List>
                     </div>
                 </Grid>

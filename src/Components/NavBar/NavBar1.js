@@ -21,7 +21,13 @@ const useStyles = makeStyles((theme) => ({
     },
     logo1: {
         flexGrow: 1,
-        float: 'right'
+        float: 'right',
+    },
+    tabs: {
+        flexGrow: 1,
+        fontFamily: 'Staatliches, cursive',
+        fontSize: '16pt',
+        backgroundColor: '#e58e06'
     }
 }));
 
@@ -37,7 +43,7 @@ export default function NavBar1() {
                     <img alt="logo" src={logo} width="60" height="60" className={classes.logo1} />{' '}
                 </Navbar.Brand>
             </Navbar>
-            <Nav fill variant="tabs">
+            <Nav fill variant="tabs" className={classes.tabs}>
                 <Nav.Item>
                     <Nav.Link href="/home">Home</Nav.Link>
                 </Nav.Item>
