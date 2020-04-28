@@ -3,7 +3,6 @@ import Main from '../Main/Main';
 import Schedule from '../Main/Schedule';
 import Footer from '../Footer/Footer';
 import Twitter from '../Main/Twitter';
-import News from '../Main/News';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Row, Col } from 'react-bootstrap';
 import NavBar1 from '../NavBar/NavBar1';

@@ -7,23 +7,33 @@ function FriendCard(props) {
       <div className="img-container">
         <img href={props.hudl} alt={props.name} src={props.image} />
       </div>
-      <div className="content">
+      <div className="container">
         <ul>
-          <li>
-            <strong>Name:</strong> {props.name}
-          </li>
-          <li>
-            <strong>Position:</strong> {props.position}
-          </li>
-          <li>
-            <strong>Year: </strong> {props.class}
-          </li>
-          <li>
-            <strong>Ht/Wt: </strong> {props.measurables}
-          </li>
-          <li>
-            <strong><a href="https://www.hudl.com/profile/9668819/Isaac-Hurtado">HUDL</a> </strong> {props.hudl}
-          </li>
+          <div className="row">
+            <div className="col-sm">
+              <li className="name">
+                <strong>{props.name}</strong>
+              </li>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm">
+              <li>
+                <strong>Number: </strong>{props.id}
+              </li>
+              <li>
+                <strong>Position:</strong> {props.position}
+              </li>
+            </div>
+            <div className="col-sm">
+              <li>
+                <strong>Year: </strong> {props.class}
+              </li>
+              <li>
+                <strong>Ht/Wt: </strong> {props.measurables}
+              </li>
+            </div>
+          </div>
         </ul>
       </div>
     </div>

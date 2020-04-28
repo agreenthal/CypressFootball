@@ -14,7 +14,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     img: {
-        height: '150px',
+        height: 'auto',
         width: '200px',
         display: 'flex',
         float: 'left',
@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: theme.spacing(2),
         paddingRight: theme.spacing(2),
         paddingTop: theme.spacing(2),
-        paddingBottom: theme.spacing(1),
+        paddingBottom: theme.spacing(2),
         marginBottom: theme.spacing(2)
     }
 }));
@@ -116,7 +116,7 @@ const CarouselPage = () => {
                 <p style={{ fontSize: '10pt' }}>Cypress senior running Isaac Hurtado, Orange County’s leading rusher in 2019, will sign with Army on Wednesday. Hurtado (6-3, 210) was the 2019 CIF-Southern Section Division 7 offensive player of the year and was an All-Orange County first team selection. He rushed for 2,631 yards and 37 touchdowns. He also had 25 receptions, six of them for touchdowns. The Centurions finished 13-1. West Point athletics recruits do not sign letters of intent. As Army coach Jeff Monken explained, “While our recruits are not signing letters of intent, they are signing a certificate of commitment to attend the U.S. Military Academy.”</p>
             </Paper>
             <Paper elevation={3} className={classes.news}>
-                <img className={classes.img} src="https://www.ocregister.com/wp-content/uploads/2019/11/OCR-L-HSFB-CYPRESS-1123.007.kg_-2.jpg?w=799" alt="newsphoto"></img>
+                <img className={classes.img} src="https://www.ocregister.com/wp-content/uploads/2019/11/OCR-L-HSFB-CYPRESS-1123.007.kg_-2.jpg?w=750" alt="newsphoto"></img>
                 <h1 style={{ fontSize: '16pt', fontFamily: 'Staatliches, cursive' }}><a href="https://www.ocregister.com/2019/11/22/hurtado-does-it-all-at-the-end-lifting-cypress-past-serrano-and-into-division-7-title-game/">Hurtado does it all at the end, lifting Cypress past Serrano and into Division 7 title game</a></h1>
                 <p style={{ fontSize: '10pt' }}>Isaac Hurtado was not going to be denied. Moments after shaking off an ankle injury to score the go-ahead touchdown for Cypress, Hurtado tackled Serrano quarterback Parker Chaffee on fourth down in the final seconds to preserve the 26-21 victory in the CIF-SS Division 7 semifinal at Western High on Friday night. The Centurions (13-0) advanced to their first section final since 2007. They will have a home game against Temecula Valley on Nov. 29 or Nov. 30.</p>
             </Paper>
