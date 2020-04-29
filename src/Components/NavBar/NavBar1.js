@@ -54,10 +54,10 @@ export default function NavBar1() {
                     <Nav.Link href="/coaches">Coaches</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-3">Forms/Links</Nav.Link>
+                    <Nav.Link href="/links">Forms/Links</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-3">Boosters/Sponsors</Nav.Link>
+                    <Nav.Link href="/boosters">Boosters/Sponsors</Nav.Link>
                 </Nav.Item>
             </Nav>
         </div>

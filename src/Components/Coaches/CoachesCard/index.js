@@ -5,19 +5,27 @@ function FriendCard(props) {
   return (
     <div className="card">
       <div className="img-container">
-        <img href={props.hudl} alt={props.name} src={props.image} />
+        <img alt={props.name} src={props.image} />
       </div>
-      <div className="content">
+      <div className="container">
         <ul>
-          <li>
-            {props.name}
-          </li>
-          <li>
-            {props.position}
-          </li>
+          <div className="row">
+            <div className="col">
+              <li className="name">
+                <strong>{props.name}</strong>
+              </li>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm">
+              <li>
+                <strong>Position:</strong> {props.position}
+              </li>
+            </div>
+          </div>
         </ul>
       </div>
-    </div>
+    </div >
   );
 }
 

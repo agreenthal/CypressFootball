@@ -21,16 +21,16 @@
 }
 
 .card > .container {
-  /* padding-left: 5px;
-  padding-right: 5px; */
+  padding-left: 0px;
+  padding-right: 15px;
   font-size: 15px;
   margin-left: 0px;
 }
 
-.card > .container > ul > .row2 > .col-sm > .name {
+.card > .container > ul > .row > .col > .name {
   text-align: center;
   font-size: 16pt;
-  font-weight: bold;
+  padding-right: 30px;
 }
 
 .card > .container > ul {
@@ -38,8 +38,11 @@
   margin-top: 10px;
 }
 
-.card > .container > ul > .row2 > .col-sm > li {
-  text-align: start;
-  margin-top: 10px;
-  padding-right: 10px;
+.card > .container > ul > .row > .col-sm {
+  padding: 0px;
+}
+
+.card > .container > ul > .row > .col-sm > li {
+  text-align: left;
+  margin-top: 5px;
 }

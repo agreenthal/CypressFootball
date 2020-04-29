@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
         width: '100%',
+        paddingBottom: '0px'
     },
     demo: {
         backgroundColor: theme.palette.background.paper,
@@ -182,7 +183,7 @@ export default function Schedule() {
                                 />
                             </ListItem>
                             <br />
-                            <h1 style={{ textAlign: 'center', fontWeight: 'bold' }}>Record: 0-0</h1>
+                            <h1 style={{ textAlign: 'center', fontWeight: 'bold', paddingTop: '40px' }}>Record: 0-0</h1>
                         </List>
                     </div>
                 </Grid>

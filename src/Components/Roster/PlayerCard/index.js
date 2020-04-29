@@ -10,7 +10,7 @@ function FriendCard(props) {
       <div className="container">
         <ul>
           <div className="row">
-            <div className="col-sm">
+            <div className="col">
               <li className="name">
                 <strong>{props.name}</strong>
               </li>
@@ -18,7 +18,7 @@ function FriendCard(props) {
           </div>
           <div className="row">
             <div className="col-sm">
-              <li>
+              <li >
                 <strong>Number: </strong>{props.id}
               </li>
               <li>
