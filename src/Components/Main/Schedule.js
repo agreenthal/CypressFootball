@@ -41,6 +41,12 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '10pt',
         textAlign: 'center',
         fontFamily: 'Staatliches, cursive'
+    },
+    record: {
+        textAlign: 'center',
+        fontWeight: 'bold',
+        paddingTop: theme.spacing(2),
+        paddingBottom: theme.spacing(2)
     }
 }));
 
@@ -69,7 +75,7 @@ export default function Schedule() {
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="Week 0: @ Peninsula HS"
+                                    primary="Week 0: @ Peninsula"
                                     secondary={secondary ? 'Secondary text' : 'Location: Peninsula HS'}
                                 />
                             </ListItem>
@@ -80,7 +86,7 @@ export default function Schedule() {
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="Week 1: @ San Juan Hills HS"
+                                    primary="Week 1: @ San Juan Hills"
                                     secondary={secondary ? 'Secondary text' : "Location: San Juan Hills HS"}
                                 />
                             </ListItem>
@@ -91,7 +97,7 @@ export default function Schedule() {
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="Week 2: vs. Western HS"
+                                    primary="Week 2: vs. Western"
                                     secondary={secondary ? 'Secondary text' : "Location: Western HS"}
                                 />
                             </ListItem>
@@ -112,7 +118,7 @@ export default function Schedule() {
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="Week 4: vs. Katella HS"
+                                    primary="Week 4: vs. Katella (Th)"
                                     secondary={secondary ? 'Secondary text' : 'Location: Glover Stadium'}
                                 />
                             </ListItem>
@@ -123,7 +129,7 @@ export default function Schedule() {
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="Week 5: @ Capo Valley HS"
+                                    primary="Week 5: @ Capo Valley"
                                     secondary={secondary ? 'Secondary text' : 'Location: Capistrano Valley HS'}
                                 />
                             </ListItem>
@@ -134,7 +140,7 @@ export default function Schedule() {
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="Week 6: vs. Valencia HS"
+                                    primary="Week 6: vs. Valencia (Homecoming)"
                                     secondary={secondary ? 'Secondary text' : 'Location: Western HS'}
                                 />
                             </ListItem>
@@ -145,7 +151,7 @@ export default function Schedule() {
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="Week 7: @ Crean Lutheran HS"
+                                    primary="Week 7: @ Crean Lutheran"
                                     secondary={secondary ? 'Secondary text' : 'Location: Portola HS'}
                                 />
                             </ListItem>
@@ -156,7 +162,7 @@ export default function Schedule() {
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="Week 8: vs. Tustin HS"
+                                    primary="Week 8: vs. Tustin"
                                     secondary={secondary ? 'Secondary text' : 'Location: Western HS'}
                                 />
                             </ListItem>
@@ -167,7 +173,7 @@ export default function Schedule() {
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="Week 9: vs. Pacifica HS"
+                                    primary="Week 9: vs. Pacifica (Th)"
                                     secondary={secondary ? 'Secondary text' : 'Location: Western HS'}
                                 />
                             </ListItem>
@@ -178,12 +184,12 @@ export default function Schedule() {
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary="Week 10: @ Kennedy HS"
+                                    primary="Week 10: @ Kennedy HS (Th)"
                                     secondary={secondary ? 'Secondary text' : 'Location: Western HS'}
                                 />
                             </ListItem>
                             <br />
-                            <h1 style={{ textAlign: 'center', fontWeight: 'bold', paddingTop: '40px' }}>Record: 0-0</h1>
+                            <h1 className={classes.record}>Record: 0-0</h1>
                         </List>
                     </div>
                 </Grid>

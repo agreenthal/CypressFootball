@@ -37,7 +37,7 @@ export default function NavBar1() {
     return (
         <div className={classes.root}>
             <Navbar sticky="top" bg="dark" variant="dark">
-                <Navbar.Brand href="#home" className={classes.title}>
+                <Navbar.Brand href="/" className={classes.title}>
                     <img alt="logo" src={logo} width="60" height="60" className={classes.logo} />{' '}
                     Cypress Centurion Football
                     <img alt="logo" src={logo} width="60" height="60" className={classes.logo1} />{' '}
