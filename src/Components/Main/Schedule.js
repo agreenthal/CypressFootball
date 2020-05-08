@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
         width: '100%',
-        paddingBottom: '0px'
+        paddingBottom: '0px',
     },
     demo: {
         backgroundColor: theme.palette.background.paper,

@@ -24,13 +24,8 @@ function FriendCard(props) {
               <li>
                 <strong>Position:</strong> {props.position}
               </li>
-            </div>
-            <div className="col-sm">
               <li>
                 <strong>Year: </strong> {props.class}
-              </li>
-              <li>
-                <strong>Ht/Wt: </strong> {props.measurables}
               </li>
             </div>
           </div>

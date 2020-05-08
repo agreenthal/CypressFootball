@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         fontFamily: 'Staatliches, cursive',
         textAlign: 'center',
-        fontSize: '32pt'
+        fontSize: '48pt'
     },
     logo: {
         flexGrow: 1,
@@ -38,9 +38,9 @@ export default function NavBar1() {
         <div className={classes.root}>
             <Navbar sticky="top" bg="dark" variant="dark">
                 <Navbar.Brand href="/" className={classes.title}>
-                    <img alt="logo" src={logo} width="60" height="60" className={classes.logo} />{' '}
+                    <img alt="logo" src={logo} width="80" height="80" className={classes.logo} />{' '}
                     Cypress Centurion Football
-                    <img alt="logo" src={logo} width="60" height="60" className={classes.logo1} />{' '}
+                    <img alt="logo" src={logo} width="80" height="80" className={classes.logo1} />{' '}
                 </Navbar.Brand>
             </Navbar>
             <Nav fill variant="tabs" className={classes.tabs}>

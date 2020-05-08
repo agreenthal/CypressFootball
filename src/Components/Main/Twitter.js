@@ -1,13 +1,12 @@
 import React from 'react';
-import { MDBView, MDBContainer } from
-    "mdbreact";
+import { MDBContainer } from "mdbreact";
 import { makeStyles } from '@material-ui/core/styles';
-import { Paper } from '@material-ui/core';
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        display: 'flex'
+        display: 'flex',
+        position: 'static'
     }
 }));
 
