@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     main: {
         flexGrow: 1,
         display: 'flex',
+        flexDirection: 'row',
         justifyContent: 'center',
         marginTop: theme.spacing(2),
         // border: '2px red solid',
@@ -50,11 +51,11 @@ function Home() {
                         <Main />
                     </Row>
                 </Col>
-                <Col className={classes.twitter} xs={2}>
+                {/* <Col className={classes.twitter} xs={2}>
                     <Row>
                         <Twitter />
                     </Row>
-                </Col>
+                </Col> */}
             </Row>
             <Row>
                 <Footer />

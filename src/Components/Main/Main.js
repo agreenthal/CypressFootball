@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
         height: 'auto',
         width: '200px',
         display: 'flex',
+        flexWrap: 'wrap',
         float: 'left',
         paddingBottom: theme.spacing(1),
         paddingRight: theme.spacing(2)
@@ -38,7 +39,7 @@ const CarouselPage = () => {
             <MDBCarousel
                 activeItem={1}
                 length={7}
-                showControls={true}
+                showControls={false}
                 showIndicators={false}
                 className="z-depth-1"
                 slide
@@ -47,7 +48,7 @@ const CarouselPage = () => {
                     <MDBCarouselItem itemId="1">
                         <MDBView>
                             <img
-                                className="d-block w-100"
+                                className="d-flex w-100"
                                 src={image1}
                                 alt="First slide"
                             />
@@ -56,7 +57,7 @@ const CarouselPage = () => {
                     <MDBCarouselItem itemId="2">
                         <MDBView>
                             <img
-                                className="d-block w-100"
+                                className="d-flex w-100"
                                 src={image2}
                                 alt="Second slide"
                             />
@@ -65,7 +66,7 @@ const CarouselPage = () => {
                     <MDBCarouselItem itemId="3">
                         <MDBView>
                             <img
-                                className="d-block w-100"
+                                className="d-flex w-100"
                                 src={image3}
                                 alt="Third slide"
                             />
@@ -74,7 +75,7 @@ const CarouselPage = () => {
                     <MDBCarouselItem itemId="4">
                         <MDBView>
                             <img
-                                className="d-block w-100"
+                                className="d-flex w-100"
                                 src={image4}
                                 alt="Fourth slide"
                             />
@@ -83,7 +84,7 @@ const CarouselPage = () => {
                     <MDBCarouselItem itemId="5">
                         <MDBView>
                             <img
-                                className="d-block w-100"
+                                className="d-flex w-100"
                                 src={image5}
                                 alt="Fifth slide"
                             />
@@ -92,7 +93,7 @@ const CarouselPage = () => {
                     <MDBCarouselItem itemId="6">
                         <MDBView>
                             <img
-                                className="d-block w-100"
+                                className="d-flex w-100"
                                 src={image6}
                                 alt="Sixth slide"
                             />
@@ -101,7 +102,7 @@ const CarouselPage = () => {
                     <MDBCarouselItem itemId="7">
                         <MDBView>
                             <img
-                                className="d-block w-100"
+                                className="d-flex w-100"
                                 src={image7}
                                 alt="Seventh slide"
                             />
