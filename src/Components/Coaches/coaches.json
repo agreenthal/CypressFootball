@@ -1,32 +1,72 @@
 [
   {
     "id": 1,
-    "name": "Rick Feldman",
-    "image": "https://pbs.twimg.com/media/DjsvgsLU8AEYwXI.jpg",
-    "position": "Head Coach"
+    "name": "Line Six",
+    "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    "position": "Team",
+    "class": "Senior"
   },
   {
     "id": 2,
-    "name": "Mr. Krabs",
-    "image": "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
-    "position": "Fry Cook"
+    "name": "Elijah Vaielua",
+    "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    "position": "WR",
+    "class": "Senior"
   },
   {
     "id": 3,
-    "name": "Squidward",
-    "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
-    "position": "Fry Cook"
+    "name": "Logan LeMonnier",
+    "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    "position": "QB",
+    "class": "Sophomore"
   },
   {
     "id": 4,
-    "name": "Courage",
-    "image": "https://vignette4.wikia.nocookie.net/vsbattles/images/3/39/Courage-0.png/revision/latest?cb=20160719055423",
-    "position": "OL"
+    "name": "Kyler Kroll",
+    "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    "position": "DB",
+    "class": "Senior"
   },
   {
     "id": 5,
-    "name": "Rocko",
-    "image": "http://vignette3.wikia.nocookie.net/rockosmodernlife/images/9/9e/Rockos-modern-life-4e582a8f06a41.png/revision/latest?cb=20130522173416",
-    "position": "DL"
+    "name": "Neil Jansen",
+    "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    "position": "DB",
+    "class": "Sophomore"
+  },
+  {
+    "id": 6,
+    "name": "Angel Calvo",
+    "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    "position": "RB/DB",
+    "class": "Senior"
+  },
+  {
+    "id": 7,
+    "name": "Judith Lazaro",
+    "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    "position": "WR",
+    "class": "Senior"
+  },
+  {
+    "id": 8,
+    "name": "Chase Vigil",
+    "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    "position": "WR",
+    "class": "Senior"
+  },
+  {
+    "id": 9,
+    "name": "Corey Anesi",
+    "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    "position": "WR/DB",
+    "class": "Junior"
+  },
+  {
+    "id": 10,
+    "name": "Tomas Ramirez",
+    "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    "position": "WR",
+    "class": "Sophomore"
   }
 ]

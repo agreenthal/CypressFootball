@@ -13,7 +13,8 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         fontFamily: 'Staatliches, cursive',
         textAlign: 'center',
-        fontSize: '48pt'
+        fontSize: '48pt',
+        textShadow: '4px 3px 0 #7A7A7A'
     },
     logo: {
         flexGrow: 1,
@@ -27,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         fontFamily: 'Staatliches, cursive',
         fontSize: '16pt',
-        backgroundColor: '#e58e06'
     }
 }));
 
