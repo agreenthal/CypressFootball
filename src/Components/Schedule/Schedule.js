@@ -26,11 +26,12 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         width: '100%',
         paddingBottom: '0px',
-        marginTop: '5px'
+        marginTop: '5px',
     },
     demo: {
         backgroundColor: theme.palette.background.paper,
-        fontSize: '12pt'
+        fontSize: '12pt',
+        marginLeft: '43%'
     },
     title: {
         margin: theme.spacing(2, 0, 0),
@@ -56,7 +57,6 @@ const useStyles = makeStyles((theme) => ({
 export default function Schedule() {
     const classes = useStyles();
     const [dense] = React.useState(true);
-    const [secondary, setSecondary] = React.useState(false);
     return (
         <Paper elevation={6} className={classes.root}>
             <Grid container spacing={1}>
@@ -189,8 +189,6 @@ export default function Schedule() {
                                     secondary={'Location: Western HS'}
                                 />
                             </ListItem>
-                            <br />
-                            <h1 className={classes.record}>Record: 0-0</h1>
                         </List>
                     </div>
                 </Grid>

@@ -64,7 +64,7 @@ export default function NavBar1() {
                     <Nav.Link href="/coaches">Coaches</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="/links">Forms/Links</Nav.Link>
+                    <Nav.Link href="/links">Links</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                     <Nav.Link href="/boosters">Boosters/Sponsors</Nav.Link>

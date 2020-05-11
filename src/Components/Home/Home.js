@@ -52,10 +52,10 @@ function Home() {
                         <Main />
                     </Row>
                 </Col>
-                <Col className={classes.twitter} xs={2}>
+                <Col>
                     <Row>
                         {/* <Twitter /> */}
-                        <News />
+                        {/* <News /> */}
                     </Row>
                 </Col>
             </Row>
