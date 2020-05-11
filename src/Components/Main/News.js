@@ -5,18 +5,25 @@ import { MDBContainer } from "mdbreact";
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
-    img: {
+    root: {
+        width: '100%',
+        display: 'flex'
+    },
+    news: {
 
+    },
+    newsItem: {
+        width: '100%'
     }
 }));
 
 function News() {
     const classes = useStyles();
     return (
-        <Container>
+        <Container className={classes.root}>
             <Row>
                 <MDBContainer>
-                    <Paper>
+                    <Paper className={classes.newsItem}>
                         <p>News Section</p>
                     </Paper>
                 </MDBContainer>

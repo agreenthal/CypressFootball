@@ -4,6 +4,7 @@ import logo from '../../Images/logo2.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
+
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -14,20 +15,26 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: 'Staatliches, cursive',
         textAlign: 'center',
         fontSize: '48pt',
-        textShadow: '4px 3px 0 #7A7A7A'
     },
     logo: {
         flexGrow: 1,
-        float: 'left'
+        float: 'left',
     },
     logo1: {
         flexGrow: 1,
         float: 'right',
     },
+    team: {
+        flexGrow: 1,
+        float: 'left',
+        borderRadius: '50%',
+        marginRight: '10px'
+    },
     tabs: {
         flexGrow: 1,
         fontFamily: 'Staatliches, cursive',
         fontSize: '16pt',
+        backgroundColor: 'orange',
     }
 }));
 
@@ -37,7 +44,7 @@ export default function NavBar1() {
     return (
         <div className={classes.root}>
             <Navbar sticky="top" bg="dark" variant="dark">
-                <Navbar.Brand href="/" className={classes.title}>
+                <Navbar.Brand className={classes.title}>
                     <img alt="logo" src={logo} width="80" height="80" className={classes.logo} />{' '}
                     Cypress Centurion Football
                     <img alt="logo" src={logo} width="80" height="80" className={classes.logo1} />{' '}
@@ -46,6 +53,9 @@ export default function NavBar1() {
             <Nav fill variant="tabs" className={classes.tabs}>
                 <Nav.Item>
                     <Nav.Link href="/home">Home</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="/schedule">Schedule</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                     <Nav.Link href="/roster">Roster</Nav.Link>

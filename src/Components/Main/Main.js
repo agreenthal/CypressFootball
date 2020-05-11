@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     news: {
         paddingLeft: theme.spacing(2),
         paddingRight: theme.spacing(2),
-        paddingTop: theme.spacing(2),
+        paddingTop: theme.spacing(1),
         paddingBottom: theme.spacing(2),
         marginBottom: theme.spacing(2)
     }
@@ -36,14 +36,7 @@ const CarouselPage = () => {
     const classes = useStyles();
     return (
         <MDBContainer>
-            <MDBCarousel
-                activeItem={1}
-                length={7}
-                showControls={false}
-                showIndicators={false}
-                className="z-depth-1"
-                slide
-            >
+            <MDBCarousel activeItem={1} length={7} showControls={false} showIndicators={false} className="z-depth-1" slide>
                 <MDBCarouselInner>
                     <MDBCarouselItem itemId="1">
                         <MDBView>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Main from '../Main/Main';
-import Schedule from '../Main/Schedule';
+import Schedule from '../Schedule/Schedule';
 import Footer from '../Footer/Footer';
 import Twitter from '../Main/Twitter';
 import News from '../Main/News';
@@ -44,8 +44,8 @@ function Home() {
                 <NavBar1 />
             </Row>
             <Row>
-                <Col className={classes.schedule} xs={3}>
-                    <Schedule />
+                <Col>
+
                 </Col>
                 <Col className={classes.main} xs={7}>
                     <Row >

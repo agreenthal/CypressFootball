@@ -5,6 +5,7 @@ import RosterPage from '../src/Components/Roster/RosterPage';
 import CoachesPage from '../src/Components/Coaches/CoachesPage';
 import LinksPage from '../src/Components/Links/LinksPage';
 import BoostersPage from '../src/Components/Boosters/BoostersPage';
+import SchedulePage from '../src/Components/Schedule/SchedulePage';
 import Home from '../src/Components/Home/Home';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <div>
         <Route exact path='/' component={Home} />
         <Route exact path='/home' component={Home} />
+        <Route exact path='/schedule' component={SchedulePage} />
         <Route exact path='/roster' component={RosterPage} />
         <Route exact path='/coaches' component={CoachesPage} />
         <Route exact path='/links' component={LinksPage} />
