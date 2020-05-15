@@ -58,7 +58,7 @@ export default function Schedule() {
     return (
         <Grid container spacing={1} className={classes.root}>
             <Grid item md>
-                <Container style={{ paddingBottom: '10px' }}>
+                <Container style={{ paddingBottom: '11px' }}>
                     <Typography variant="h6" className={classes.title}>2020 Schedule</Typography>
                     <Typography className={classes.subtitle}>(All games start at 7pm, unless specified otherwise)</Typography>
                 </Container>
