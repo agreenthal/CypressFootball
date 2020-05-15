@@ -8,7 +8,7 @@ import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { Paper } from '@material-ui/core';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import Peninsula from '../../Images/Logos/peninsula.png';
 import SanJuanHills from '../../Images/Logos/sanjuanhills.png';
@@ -26,12 +26,8 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         width: '100%',
         paddingBottom: '0px',
-        marginTop: '5px',
-    },
-    demo: {
-        backgroundColor: theme.palette.background.paper,
-        fontSize: '12pt',
-        marginLeft: '43%'
+        marginTop: theme.spacing(1),
+        marginBottom: theme.spacing(5)
     },
     title: {
         margin: theme.spacing(2, 0, 0),
@@ -44,12 +40,14 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         fontFamily: 'Staatliches, cursive'
     },
-    record: {
-        textAlign: 'center',
-        fontWeight: 'bold',
-        paddingTop: theme.spacing(2),
-        paddingBottom: theme.spacing(2)
-    }
+    preseason: {
+        display: 'flex',
+        float: 'left',
+    },
+    league: {
+        display: 'flex',
+        float: 'right',
+    },
 }));
 
 
@@ -58,141 +56,149 @@ export default function Schedule() {
     const classes = useStyles();
     const [dense] = React.useState(true);
     return (
-        <Paper elevation={6} className={classes.root}>
-            <Grid container spacing={1}>
-                <Grid item md>
-                    <Container style={{ borderBottom: '3px solid navy', paddingBottom: '10px' }}>
-                        <Typography variant="h6" className={classes.title}>
-                            2020 Schedule
-                    </Typography>
-                        <Typography className={classes.subtitle}>(All games start at 7pm, unless specified otherwise)</Typography>
-                    </Container>
-                    <div className={classes.demo}>
-                        <List dense={dense}>
-                            <ListItem >
-                                <ListItemAvatar>
-                                    <Avatar>
-                                        <img src={Peninsula} alt="peninsula" />
-                                    </Avatar>
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="Week 0: @ Peninsula"
-                                    secondary={'Location: Peninsula HS'}
-                                />
-                            </ListItem>
-                            <ListItem>
-                                <ListItemAvatar>
-                                    <Avatar>
-                                        <img src={SanJuanHills} alt="sanjuanhills" />
-                                    </Avatar>
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="Week 1: @ San Juan Hills"
-                                    secondary={"Location: San Juan Hills HS"}
-                                />
-                            </ListItem>
-                            <ListItem>
-                                <ListItemAvatar>
-                                    <Avatar>
-                                        <img src={Western} alt="western" />
-                                    </Avatar>
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="Week 2: vs. Western"
-                                    secondary={"Location: Western HS"}
-                                />
-                            </ListItem>
-                            <ListItem>
-                                <ListItemAvatar>
-                                    <Avatar>
-                                    </Avatar>
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="Week 3: Bye"
-                                    secondary={null}
-                                />
-                            </ListItem>
-                            <ListItem>
-                                <ListItemAvatar>
-                                    <Avatar>
-                                        <img src={Katella} alt="katella" />
-                                    </Avatar>
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="Week 4: vs. Katella (Th)"
-                                    secondary={'Location: Glover Stadium'}
-                                />
-                            </ListItem>
-                            <ListItem>
-                                <ListItemAvatar>
-                                    <Avatar>
-                                        <img src={Capo} alt="capo" />
-                                    </Avatar>
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="Week 5: @ Capo Valley"
-                                    secondary={'Location: Capistrano Valley HS'}
-                                />
-                            </ListItem>
-                            <ListItem>
-                                <ListItemAvatar>
-                                    <Avatar>
-                                        <img src={Valencia} alt="valencia" />
-                                    </Avatar>
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="Week 6: vs. Valencia (Homecoming)"
-                                    secondary={'Location: Western HS'}
-                                />
-                            </ListItem>
-                            <ListItem>
-                                <ListItemAvatar>
-                                    <Avatar>
-                                        <img src={Crean} alt="crean" />
-                                    </Avatar>
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="Week 7: @ Crean Lutheran"
-                                    secondary={'Location: Portola HS'}
-                                />
-                            </ListItem>
-                            <ListItem>
-                                <ListItemAvatar>
-                                    <Avatar>
-                                        <img src={Tustin} alt="tustin" />
-                                    </Avatar>
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="Week 8: vs. Tustin"
-                                    secondary={'Location: Western HS'}
-                                />
-                            </ListItem>
-                            <ListItem>
-                                <ListItemAvatar>
-                                    <Avatar>
-                                        <img src={Pacifica} alt="pacifica" />
-                                    </Avatar>
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="Week 9: vs. Pacifica (Th)"
-                                    secondary={'Location: Western HS'}
-                                />
-                            </ListItem>
-                            <ListItem>
-                                <ListItemAvatar>
-                                    <Avatar>
-                                        <img src={Kennedy} alt="kennedy" />
-                                    </Avatar>
-                                </ListItemAvatar>
-                                <ListItemText
-                                    primary="Week 10: @ Kennedy HS (Th)"
-                                    secondary={'Location: Western HS'}
-                                />
-                            </ListItem>
-                        </List>
-                    </div>
-                </Grid>
+        <Grid container spacing={1} className={classes.root}>
+            <Grid item md>
+                <Container style={{ paddingBottom: '10px' }}>
+                    <Typography variant="h6" className={classes.title}>2020 Schedule</Typography>
+                    <Typography className={classes.subtitle}>(All games start at 7pm, unless specified otherwise)</Typography>
+                </Container>
+                <Container>
+                    <Row>
+                        <Col className={classes.preseason}>
+                            <div>
+                                <List dense={dense}>
+                                    <ListItem >
+                                        <ListItemAvatar>
+                                            <Avatar>
+                                                <img src={Peninsula} alt="peninsula" />
+                                            </Avatar>
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Week 0: @ Peninsula"
+                                            secondary={'Location: Peninsula HS'}
+                                        />
+                                    </ListItem>
+                                    <ListItem>
+                                        <ListItemAvatar>
+                                            <Avatar>
+                                                <img src={SanJuanHills} alt="sanjuanhills" />
+                                            </Avatar>
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Week 1: @ San Juan Hills"
+                                            secondary={"Location: San Juan Hills HS"}
+                                        />
+                                    </ListItem>
+                                    <ListItem>
+                                        <ListItemAvatar>
+                                            <Avatar>
+                                                <img src={Western} alt="western" />
+                                            </Avatar>
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Week 2: vs. Western"
+                                            secondary={"Location: Western HS"}
+                                        />
+                                    </ListItem>
+                                    <ListItem>
+                                        <ListItemAvatar>
+                                            <Avatar>
+                                            </Avatar>
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Week 3: Bye"
+                                            secondary={null}
+                                        />
+                                    </ListItem>
+                                    <ListItem>
+                                        <ListItemAvatar>
+                                            <Avatar>
+                                                <img src={Katella} alt="katella" />
+                                            </Avatar>
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Week 4: vs. Katella (Th)"
+                                            secondary={'Location: Glover Stadium'}
+                                        />
+                                    </ListItem>
+                                    <ListItem>
+                                        <ListItemAvatar>
+                                            <Avatar>
+                                                <img src={Capo} alt="capo" />
+                                            </Avatar>
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Week 5: @ Capo Valley"
+                                            secondary={'Location: Capistrano Valley HS'}
+                                        />
+                                    </ListItem>
+                                </List>
+                            </div>
+                        </Col>
+                        <Col className={classes.league}>
+                            <div>
+                                <List dense={dense}>
+                                    <ListItem>
+                                        <ListItemAvatar>
+                                            <Avatar>
+                                                <img src={Valencia} alt="valencia" />
+                                            </Avatar>
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Week 6: vs. Valencia (Homecoming)"
+                                            secondary={'Location: Western HS'}
+                                        />
+                                    </ListItem>
+                                    <ListItem>
+                                        <ListItemAvatar>
+                                            <Avatar>
+                                                <img src={Crean} alt="crean" />
+                                            </Avatar>
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Week 7: @ Crean Lutheran"
+                                            secondary={'Location: Portola HS'}
+                                        />
+                                    </ListItem>
+                                    <ListItem>
+                                        <ListItemAvatar>
+                                            <Avatar>
+                                                <img src={Tustin} alt="tustin" />
+                                            </Avatar>
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Week 8: vs. Tustin"
+                                            secondary={'Location: Western HS'}
+                                        />
+                                    </ListItem>
+                                    <ListItem>
+                                        <ListItemAvatar>
+                                            <Avatar>
+                                                <img src={Pacifica} alt="pacifica" />
+                                            </Avatar>
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Week 9: vs. Pacifica (Th)"
+                                            secondary={'Location: Western HS'}
+                                        />
+                                    </ListItem>
+                                    <ListItem>
+                                        <ListItemAvatar>
+                                            <Avatar>
+                                                <img src={Kennedy} alt="kennedy" />
+                                            </Avatar>
+                                        </ListItemAvatar>
+                                        <ListItemText
+                                            primary="Week 10: @ Kennedy HS (Th)"
+                                            secondary={'Location: Western HS'}
+                                        />
+                                    </ListItem>
+                                </List>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
             </Grid>
-        </Paper>
+        </Grid>
     )
 }
