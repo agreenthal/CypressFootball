@@ -3,6 +3,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import logo from '../../Images/logo2.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import Avatar from '@material-ui/core/Avatar';
+import Peninsula from '../../Images/Logos/peninsula.png';
+import SanJuanHills from '../../Images/Logos/sanjuanhills.png';
+import Western from '../../Images/Logos/western.png';
+import Katella from '../../Images/Logos/katella.png';
+import Capo from '../../Images/Logos/capo.png';
 
 
 const useStyles = makeStyles((theme) => ({

@@ -41,8 +41,10 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: 'Staatliches, cursive'
     },
     preseason: {
+        flexGrow: 1,
         display: 'flex',
         float: 'left',
+        textAlign: 'center'
     },
     league: {
         display: 'flex',
@@ -62,8 +64,9 @@ export default function Schedule() {
                     <Typography variant="h6" className={classes.title}>2020 Schedule</Typography>
                     <Typography className={classes.subtitle}>(All games start at 7pm, unless specified otherwise)</Typography>
                 </Container>
-                <Container>
+                <Container fluid>
                     <Row>
+                        <Col></Col>
                         <Col className={classes.preseason}>
                             <div>
                                 <List dense={dense}>
@@ -102,8 +105,6 @@ export default function Schedule() {
                                     </ListItem>
                                     <ListItem>
                                         <ListItemAvatar>
-                                            <Avatar>
-                                            </Avatar>
                                         </ListItemAvatar>
                                         <ListItemText
                                             primary="Week 3: Bye"
@@ -196,6 +197,7 @@ export default function Schedule() {
                                 </List>
                             </div>
                         </Col>
+                        <Col></Col>
                     </Row>
                 </Container>
             </Grid>
