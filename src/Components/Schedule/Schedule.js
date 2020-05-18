@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         paddingBottom: '0px',
         marginTop: theme.spacing(1),
-        marginBottom: theme.spacing(5)
+        marginBottom: theme.spacing(15)
     },
     title: {
         margin: theme.spacing(2, 0, 0),
@@ -69,7 +69,7 @@ export default function Schedule() {
                         <Col></Col>
                         <Col className={classes.preseason}>
                             <div>
-                                <List dense={dense}>
+                                <List>
                                     <ListItem >
                                         <ListItemAvatar>
                                             <Avatar>
@@ -138,7 +138,7 @@ export default function Schedule() {
                         </Col>
                         <Col className={classes.league}>
                             <div>
-                                <List dense={dense}>
+                                <List>
                                     <ListItem>
                                         <ListItemAvatar>
                                             <Avatar>

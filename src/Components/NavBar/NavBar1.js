@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         fontFamily: 'Staatliches, cursive',
         fontSize: '16pt',
-        backgroundColor: 'orange',
+        backgroundColor: '#f38011',
     }
 }));
 
