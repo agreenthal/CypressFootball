@@ -1,72 +1,62 @@
 [
   {
     "id": 1,
-    "name": "Line Six",
+    "name": "Rich Feldman",
     "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-    "position": "Team",
-    "class": "Senior"
+    "position": "Head Coach/OC/QBs"
   },
   {
     "id": 2,
-    "name": "Elijah Vaielua",
+    "name": "Kevin Dull",
     "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-    "position": "WR",
-    "class": "Senior"
+    "position": "Assistant Head Coach/WRs"
   },
   {
     "id": 3,
-    "name": "Logan LeMonnier",
+    "name": "Brian Crooks",
     "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-    "position": "QB",
-    "class": "Sophomore"
+    "position": "Defensive Coordinator/LBs"
   },
   {
     "id": 4,
-    "name": "Kyler Kroll",
+    "name": "Adam Greenthal",
     "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-    "position": "DB",
-    "class": "Senior"
+    "position": "Offensive Line"
   },
   {
     "id": 5,
-    "name": "Neil Jansen",
+    "name": "Nick Buras",
     "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-    "position": "DB",
-    "class": "Sophomore"
+    "position": "Quarterbacks/JV Head Coach"
   },
   {
     "id": 6,
-    "name": "Angel Calvo",
+    "name": "Matt Doyle",
     "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-    "position": "RB/DB",
-    "class": "Senior"
+    "position": "Wide Receivers"
   },
   {
     "id": 7,
-    "name": "Judith Lazaro",
+    "name": "Moreno Sr.",
     "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-    "position": "WR",
-    "class": "Senior"
+    "position": "Defensive Line"
   },
   {
     "id": 8,
-    "name": "Chase Vigil",
+    "name": "Moreno Jr.",
     "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-    "position": "WR",
-    "class": "Senior"
+    "position": "Defensive Line"
   },
   {
     "id": 9,
-    "name": "Corey Anesi",
+    "name": "Justin",
     "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-    "position": "WR/DB",
-    "class": "Junior"
+    "position": "Linebackers"
   },
   {
     "id": 10,
-    "name": "Tomas Ramirez",
+    "name": "Dan",
     "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
-    "position": "WR",
-    "class": "Sophomore"
+    "position": "Secondary"
   }
 ]

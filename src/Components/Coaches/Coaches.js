@@ -6,19 +6,15 @@ import Title from "./Title";
 
 
 class Roster extends Component {
-    // Setting this.state.roster to the roster json array
     state = {
         coaches
     };
 
     removeFriend = id => {
-        // Filter this.state.roster for roster with an id not equal to the id being removed
         const coaches = this.state.coaches.filter(coach => coach.id !== id);
-        // Set this.state.roster equal to the new roster array
         this.setState({ coaches });
     };
 
-    // Map over this.state.roster and render a FriendCard component for each friend object
     render() {
         return (
             <Wrapper>
@@ -29,6 +25,7 @@ class Roster extends Component {
                         key={coach.id}
                         name={coach.name}
                         image={coach.image}
+                        position={coach.position}
                     />
                 ))}
             </Wrapper>

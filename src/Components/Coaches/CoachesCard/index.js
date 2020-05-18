@@ -19,7 +19,7 @@ function FriendCard(props) {
           <div className="row">
             <div className="col-sm">
               <li>
-                <strong>Position:</strong> {props.position}
+                <strong>{props.position}</strong>
               </li>
             </div>
           </div>
