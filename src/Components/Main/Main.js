@@ -36,7 +36,7 @@ const CarouselPage = () => {
     const classes = useStyles();
     return (
         <MDBContainer>
-            <MDBCarousel activeItem={1} length={7} showControls={false} showIndicators={false} className="z-depth-1" slide>
+            <MDBCarousel activeItem={1} length={7} showControls={true} showIndicators={false} className="z-depth-1" slide>
                 <MDBCarouselInner>
                     <MDBCarouselItem itemId="1">
                         <MDBView>
