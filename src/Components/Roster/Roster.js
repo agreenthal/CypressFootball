@@ -10,11 +10,6 @@ class Roster extends Component {
         players
     };
 
-    removeFriend = id => {
-        const players = this.state.players.filter(player => player.id !== id);
-        this.setState({ players });
-    };
-
     render() {
         return (
             <Wrapper>
