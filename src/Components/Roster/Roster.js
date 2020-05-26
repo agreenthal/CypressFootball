@@ -4,7 +4,6 @@ import PlayerCard from "./PlayerCard";
 import Wrapper from "./Wrapper";
 import Title from "./Title";
 
-
 class Roster extends Component {
     state = {
         players
