@@ -7,7 +7,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import { Paper } from '@material-ui/core';
+// import { Paper } from '@material-ui/core';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import Peninsula from '../../Images/Logos/peninsula.png';
@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Schedule() {
     const classes = useStyles();
-    const [dense] = React.useState(true);
+    // const [dense] = React.useState(true);
     return (
         <Grid container spacing={1} className={classes.root}>
             <Grid item md>
